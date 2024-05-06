@@ -1,5 +1,5 @@
 {
-  "name": "template-node-lib",
+  "name": "node-fastify-ws",
   "version": "0.0.0-semantically-released",
   "description": "nodejs typescript library template",
   "main": "dist/index.js",
@@ -7,10 +7,10 @@
   "author": "Mahmoud Mraisi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mmraisi/template-node-lib"
+    "url": "https://github.com/mmraisi/node-fastify-ws"
   },
   "bugs": {
-    "url": "https://github.com/mmraisi/template-node-lib/issues"
+    "url": "https://github.com/mmraisi/node-fastify-ws/issues"
   },
   "scripts": {
     "lint": "eslint .",
@@ -22,19 +22,18 @@
     "test:ci": "npm run test:unit:100"
   },
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "engines": {
     "node": ">=20"
   },
   "keywords": [
-    "template",
+    "fastify",
     "node",
-    "library"
+    "websocket"
   ],
   "files": [
-		"dist"
-	],
+    "dist"
+  ],
   "devDependencies": {
     "@semantic-release/github": "^10.0.3",
     "@semantic-release/release-notes-generator": "^12.1.0",
