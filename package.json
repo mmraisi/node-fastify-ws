@@ -1,7 +1,7 @@
 {
   "name": "node-fastify-ws",
   "version": "0.0.0-semantically-released",
-  "description": "nodejs typescript library template",
+  "description": "NodeJS app utilizes Fastify webSockets",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Mahmoud Mraisi",

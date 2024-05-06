@@ -5,6 +5,7 @@ import fastify, { FastifyInstance } from "fastify";
 import { join } from "node:path";
 import autoload from "@fastify/autoload";
 import { errorHandler } from "./lib/error-handler";
+import { handler } from "./routes";
 
 const PORT = process.env.PORT ?? 8080;
 
@@ -70,6 +71,11 @@ export default class Server {
       options: this.opts,
     });
     this.fastifyInstance.setErrorHandler(errorHandler);
+
+    // Register routes
+    Object.values(handler).forEach((value) => {
+      this.fastifyInstance.register(value);
+    });
   }
 
   async start() {
