@@ -14,7 +14,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "ts-node src/index.ts",
+    "start": "node dist/src/index.js",
     "build": "rm -rf dist && tsc --build",
     "dev": "nodemon src/index.ts",
     "test": "glob -c 'tsx --test' 'test/unit/**/*.test.ts'",
