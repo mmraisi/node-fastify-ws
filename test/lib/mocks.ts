@@ -1,20 +1,21 @@
-import sinon from "sinon";
+import sinon from 'sinon'
 
-export const buildMockFastify = () => {
+export function buildMockFastify () {
   return {
     log: {
-      info: sinon.stub(),
-    },
-  };
-};
-export const buildMockReply = () => {
+      info: sinon.stub()
+    }
+  }
+}
+
+export function buildMockReply () {
   const mockReply = {
     code: sinon.stub().returnsThis(),
     type: sinon.stub().returnsThis(),
     send: sinon.stub().returnsThis(),
     header: sinon.stub().returnsThis(),
-    redirect: sinon.stub().returnsThis(),
-  };
+    redirect: sinon.stub().returnsThis()
+  }
 
-  return mockReply;
-};
+  return mockReply
+}
